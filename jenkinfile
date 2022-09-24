@@ -1,1 +1,16 @@
-rrrr
+pipeline {
+    agent any
+
+        stages {
+            stage('Source') {
+                steps {
+                    git url: 'https://github.com/Manibharathi7/springboot.git'
+                }
+            }
+            stage('Build Docker Image') {  
+                steps{                     
+                   sh 'docker-compose build'    
+                    echo 'Docker-compose-build Build Image Completed'
+                    }
+                }
+            }
