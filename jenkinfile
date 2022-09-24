@@ -13,4 +13,6 @@ pipeline {
                     echo 'Docker-compose-build Build Image Completed'
                     }
                 }
-            }
+           }
+           }
+            
