@@ -4,7 +4,7 @@ pipeline {
         stages {
             stage('Source') {
                 steps {
-                    git url: 'https://github.com/Manibharathi7/springboot.git'
+                    git url: 'https://github.com/Manibharathi7/dockermysql.git'
                 }
             }
             stage('Build Docker Image') {  
